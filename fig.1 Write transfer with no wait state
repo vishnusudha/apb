@@ -1,0 +1,19 @@
+
+{ signal: [
+  { name: "PCLK",           wave: "p..." },
+  { name: "PADDR",         wave: "2........x2..........................",data: ["", "Addr 1"], period:0.1},
+  { name: "PWRITE",         wave: "2.........1...........................", period:0.1},
+  { name: "PSEL",           wave: "0........x1.................x0......", period:0.1},
+  { name: "PENABLE",        wave: "0...................x1.....x0......", period:0.1},
+  { name: "PWDATA",         wave: "2........x2.................x2......",data:["","Data1"], period:0.1},
+  { name: "PREADY",         wave: "2.......................1........2......",period:0.1, phase:1},
+ ],
+ head:{
+   text:'Write transfer with no wait states',
+   tick:0,
+ },
+ foot:{
+   text:'Figure 2-1',
+   },
+  config: { hscale: 3 }
+}
